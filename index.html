@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,800;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <title>Smash 2k26</title>
+</head>
+<body>
+   <main class="hero-container" id="heroContainer" role="region" aria-label="College Sports Festival Hero">
+    
+    <!-- Cinematic Full-bleed Athlete Background Layer -->
+    <div class="hero-visual" aria-hidden="true">
+      <video 
+        id="heroAthleteImg"
+        class="hero-visual-media" 
+        src="./increase_the_quality_of_the_vi.mp4"
+        poster="#"
+        aria-label="Collegiate athlete focused in competition"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+      ></video>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <!-- Floating Top Header / Navigation -->
+    <header class="site-header">
+      <!-- Left: Circular Logo Mark with College Sports Badge Image -->
+      <a href="#home" class="brand-logo" aria-label="College Sports Festival Home">
+        <img 
+          class="brand-logo-img" 
+          src="./Asset 4.png" 
+          alt="College Sports Festival Emblem"
+          onerror="this.onerror=null; this.src='https://placehold.co/120x120/050607/c8ff5a?text=SF';"
+        >
+      </a>
+
+      <!-- Center: Translucent Pill Navigation with Moving Capsule Indicator -->
+      <nav class="nav-pill-wrapper" id="navPillWrapper" aria-label="Main Navigation">
+        <!-- The capsule indicator that slides smoothly to clicked & hovered links -->
+        <div class="nav-slider-indicator" id="navSliderIndicator"></div>
+        <ul class="nav-pill-list" id="navPillList">
+          <li><a href="#home" class="nav-pill-link active" data-index="0">Home</a></li>
+          <li><a href="#about" class="nav-pill-link" data-index="1">About</a></li>
+          <li><a href="#sports" class="nav-pill-link" data-index="2">Sports</a></li>
+          <li><a href="schedule.html" class="nav-pill-link" data-index="3">Schedule</a></li>
+          <li><a href="#gallery" class="nav-pill-link" data-index="4">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action Buttons -->
+      <div class="header-actions">
+        <!-- Live Results Pill Button -->
+ <a href="https://ahiafestsresultengine.vercel.app/" class="results" id="liveResultsBtn" target="_blank" rel="noopener noreferrer">
+    Results <div class="icon"> <span class="material-symbols-outlined">
+arrow_forward
+</span></div>
+ </a>
+
+        <!-- Mobile Hamburger Trigger -->
+        <button id="mobileMenuBtn" class="mobile-nav-toggle" type="button" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg class="mobile-nav-icon mobile-nav-icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+          <svg class="mobile-nav-icon mobile-nav-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19"></line>
+            <line x1="19" y1="5" x2="5" y2="19"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Middle Hero Content (Dominant Title without eyebrow) -->
+    <div class="hero-body">
+      <h1 class="hero-title animate-in delay-1" id="heroHeadline">
+        <img src="./Asset 3.png" alt="" class="herotitlelogo">
+      </h1>
+    </div>
+
+    <!-- Bottom Row: Editorial Narrative & Event Card (without countdown) -->
+    <footer class="hero-footer">
+      <!-- Editorial Narrative -->
+      <p class="hero-narrative animate-in delay-2">
+         Celebrating the spirit of competition, teamwork, and excellence across the students and vibrant community of Al Hidaya Islamic Academy, Kalamassery.
+      </p>
+
+      <!-- Event Date & Location Card -->
+      <a href="#schedule" class="event-info-card animate-in delay-3" aria-label="Event Details: September 20 to 25, 2026 at College Main Campus">
+        <div class="event-icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/>
+          </svg>
+        </div>
+        <div class="event-meta">
+          <span class="event-meta-dates">September 20–25, 2026</span>
+          <span class="event-meta-venue">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            NPS Ground
+          </span>
+        </div>
+      </a>
+    </footer>
+  </main>
+
+  <div class="site-content">
+    <section class="about-section content-section" id="about">
+      <div class="section-heading"><span class="section-kicker">The story behind the season</span><h2>More than a tournament.<br><em>A shared pulse.</em></h2></div>
+      <div class="about-grid"><div class="about-copy"><p class="intro-copy">
+        SMASH 2K26 brings the Al Hidaya Islamic Academy community together through days of fierce competition, inspiring teamwork, new friendships, and unforgettable moments of sportsmanship and celebration.</p><div class="about-details"><div><strong>Our theme</strong><p>Play with purpose. Rise together.</p></div><div><strong>Our purpose</strong><p>To bring athletes together in the spirit of competition, sportsmanship, and unity—creating moments that inspire, connect, and leave a lasting legacy.</p></div><div><strong>Our history</strong><p>What began as a small sporting event has grown into one of Al Hidaya Islamic Academy, Kalamassery’s most anticipated celebrations of sports, teamwork, and excellence.</p></div></div></div><div class="stat-grid"><div class="stat-card"><strong>115+</strong><span>Athletes</span></div><div class="stat-card"><strong>60+</strong><span>Programs</span></div><div class="stat-card"><strong>05</strong><span>Days</span></div><div class="stat-card"><strong>04</strong><span>Categories</span></div></div></div>
+    </section>
+
+    <section class="sports-section content-section" id="sports"><div class="section-heading section-heading-row"><div><span class="section-kicker">Choose your arena</span><h2>All sports.<br><em>One festival.</em></h2></div><p>From the main ground to the quiet focus of the chess board, every discipline has its moment.</p></div><div class="sports-grid">
+      <a class="sport-card sport-card-wide" href="#schedule"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1200&auto=format&fit=crop" alt="Football match on a field"><span>Football</span><b>01</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=900&auto=format&fit=crop" alt="Cricket player batting"><span>Cricket</span><b>02</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=900&auto=format&fit=crop" alt="Volleyball players at the net"><span>Volleyball</span><b>03</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=900&auto=format&fit=crop" alt="Basketball player holding a ball"><span>Basketball</span><b>04</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=900&auto=format&fit=crop" alt="Athlete running on a track"><span>Athletics</span><b>05</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=900&auto=format&fit=crop" alt="Badminton player in motion"><span>Badminton</span><b>06</b></a><a class="sport-card" href="#schedule"><img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=900&auto=format&fit=crop" alt="Chess board and pieces"><span>Chess</span><b>07</b></a></a>
+    </div></section>
+
+    <section class="schedule-section content-section" id="schedule"><div class="section-heading section-heading-row"><div><span class="section-kicker">Mark your calendar</span><h2>Next up<br><em>on the field.</em></h2></div><a class="text-link" href="schedule.html">View full schedule <span>↗</span></a></div><div class="schedule-table" id="schedule-table"><div class="schedule-row schedule-head"><span>Event</span><span>Date</span><span>Time</span><span>Venue</span></div><div class="schedule-row"><strong>Opening Ceremony</strong><span>20 Sep 2026</span><span>09:00 AM</span><span>Main Ground</span></div><div class="schedule-row"><strong>Football · Group A</strong><span>20 Sep 2026</span><span>03:30 PM</span><span>Main Ground</span></div><div class="schedule-row"><strong>Basketball · Semi Final</strong><span>22 Sep 2026</span><span>04:00 PM</span><span>Indoor Stadium</span></div><div class="schedule-row"><strong>Athletics · Finals</strong><span>24 Sep 2026</span><span>08:00 AM</span><span>Athletics Track</span></div></div></section>
+
+    <section class="results-cta" id="results"><div><span class="section-kicker">The leaderboard is moving</span><h2>The competition is on.<br><em>The results are live.</em></h2></div><a class="lime-button" href="https://ahiafestsresultengine.vercel.app/" target="_blank" rel="noopener noreferrer">View live results <span class="material-symbols-outlined">
+arrow_forward</a></section>
+
+    <section class="gallery-section content-section" id="gallery"><div class="section-heading section-heading-row"><div><span class="section-kicker">The festival in focus</span><h2>Every frame<br><em>has a story.</em></h2></div><a class="text-link" href="#gallery">View full gallery <span>↗</span></a></div><div class="gallery-grid"><figure class="gallery-item gallery-feature"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1400&auto=format&fit=crop" alt="Athlete sprinting on a track"><figcaption>Athletics <small>Speed, spirit, spectacle</small></figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=900&auto=format&fit=crop" alt="Football players celebrating"><figcaption>Football</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=900&auto=format&fit=crop" alt="Cricket batsman at the crease"><figcaption>Cricket</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=900&auto=format&fit=crop" alt="Basketball hoop and ball"><figcaption>Basketball</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=900&auto=format&fit=crop" alt="Volleyball on a court"><figcaption>Volleyball</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=900&auto=format&fit=crop" alt="Opening ceremony crowd"><figcaption>Opening Ceremony</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=900&auto=format&fit=crop" alt="Indoor games competition"><figcaption>Indoor Games</figcaption></figure><figure class="gallery-item"><img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=900&auto=format&fit=crop" alt="Athletes celebrating at closing ceremony"><figcaption>Closing Ceremony</figcaption></figure></div></section>
+
+    <section class="highlights-section content-section" id="highlights"><div class="section-heading"><span class="section-kicker">The moments that last</span><h2>Watch the<br><em>highlights.</em></h2></div><div class="highlight-grid"><article class="highlight-card"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=900&auto=format&fit=crop" aria-label="Opening ceremony highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play opening ceremony highlight">▶</button><strong>Opening ceremony</strong><small>Watch the energy rise</small></article><article class="highlight-card highlight-card-tall"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=900&auto=format&fit=crop" aria-label="Best moments highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Footboys.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play best moments highlight">▶</button><strong>Best moments</strong><small>The festival in motion</small></article><article class="highlight-card"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=900&auto=format&fit=crop" aria-label="Athlete moments highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Footage-of-a-sportsman-running-on-a-treadmill.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play athlete moments highlight">▶</button><strong>Athlete moments</strong><small>Made for this</small></article></div></section>
+
+    <section class="info-section content-section" id="announcements"><div class="info-column"><span class="section-kicker">Stay in the loop</span><h2>Festival<br><em>announcements.</em></h2><div class="announcement"><time>08 SEP 2026</time><strong>Football fixtures are now live</strong><p>Check your team's reporting time and group-stage venue before match day.</p></div><div class="announcement"><time>04 SEP 2026</time><strong>Volunteer briefing moved to 18 Sep</strong><p>All student coordinators should report to the Indoor Stadium at 4:00 PM.</p></div></div><div class="info-column venue-column" id="venues"><span class="section-kicker">Know your arenas</span><h2>Five venues.<br><em>One campus.</em></h2><div class="venue-list"><div><strong>Main Ground</strong><span>Football · Opening Ceremony</span></div><div><strong>Indoor Stadium</strong><span>Basketball · Badminton · Table Tennis</span></div><div><strong>Athletics Track</strong><span>Track & Field Finals</span></div><div><strong>North Court</strong><span>Volleyball · Outdoor training</span></div></div></div></section>
+
+    <section class="community-section content-section" id="committee"><div class="section-heading section-heading-row"><div><span class="section-kicker">The people behind the play</span><h2>Built by the<br><em>whole community.</em></h2></div><p>Faculty, students, volunteers, and partners make every fixture possible.</p></div><div class="people-grid"><div><b>01</b><strong>Faculty coordinators</strong><span>Guidance that keeps the festival moving.</span></div><div><b>02</b><strong>Sports committee</strong><span>Fair play, smooth fixtures, big ambition.</span></div><div><b>03</b><strong>Student coordinators</strong><span>The energy and logistics behind every day.</span></div><div><b>04</b><strong>Volunteers</strong><span>Welcoming every athlete to the arena.</span></div></div></section>
+
+    <section class="partners-section content-section" id="partners"><span class="section-kicker">With support from</span><h2>Partners who<br><em>power the play.</em></h2><div class="partner-row"><span>ATHLETIC<span>CO</span></span><span>northstar</span><span>VITALIS</span><span>PLAYGROUND</span><span>STRIDE</span></div></section>
+
+    <footer class="site-footer" id="contact"><div class="footer-brand"><img src="./Asset 3.png" alt="SMASH 2K26 festival logo"><p>Play with purpose.<br>Rise together.</p></div><div class="footer-links"><div><strong>Explore</strong><a href="#about">About</a><a href="#sports">Sports</a><a href="schedule.html">Schedule</a><a href="#gallery">Gallery</a></div><div><strong>Connect</strong><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><a href="mailto:hello@smash2k26.edu">Contact</a></div></div><div class="footer-bottom"><span>© 2026 SMASH 2K26</span><span>NPS Ground · College Main Campus</span><a href="#home">Back to top ↑</a></div></footer>
+  </div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    <a href="#home" class="mobile-drawer-link">Home</a>
+    <a href="#about" class="mobile-drawer-link">About</a>
+    <a href="#sports" class="mobile-drawer-link">Sports</a>
+    <a href="schedule.html" class="mobile-drawer-link">Schedule</a>
+    <a href="#gallery" class="mobile-drawer-link">Gallery</a>
+  </div>
+
+  <div class="index-media-modal" id="indexMediaModal" role="dialog" aria-modal="true" aria-label="Media preview" aria-hidden="true">
+    <button class="index-media-modal-close" id="indexMediaModalClose" type="button" aria-label="Close media preview">&times;</button>
+    <img id="indexMediaModalImage" src="" alt="">
+    <video id="indexMediaModalVideo" controls playsinline hidden></video>
+  </div>
+
+  <script>
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Fluid Sliding Capsule Navigation Pill
+      const navWrapper = document.getElementById('navPillWrapper');
+      const navIndicator = document.getElementById('navSliderIndicator');
+      const navLinks = document.querySelectorAll('.nav-pill-link');
+      let currentActiveLink = document.querySelector('.nav-pill-link.active') || navLinks[0];
+
+      function updateIndicatorPosition(targetEl) {
+        if (!navWrapper || !navIndicator || !targetEl) return;
+        const wrapperRect = navWrapper.getBoundingClientRect();
+        const targetRect = targetEl.getBoundingClientRect();
+
+        const offsetLeft = targetRect.left - wrapperRect.left;
+        const targetWidth = targetRect.width;
+
+        navIndicator.style.opacity = '1';
+        navIndicator.style.width = `${targetWidth}px`;
+        navIndicator.style.transform = `translateX(${offsetLeft}px)`;
+      }
+
+      function updateNavSurface() {
+        if (!navWrapper) return;
+
+        const navRect = navWrapper.getBoundingClientRect();
+        const sections = document.elementsFromPoint(navRect.left + navRect.width / 2, navRect.bottom + 8)
+          .map((element) => element.closest('.content-section, .results-cta'))
+          .find(Boolean);
+
+        if (!sections) {
+          navWrapper.classList.remove('is-light-surface');
+          return;
+        }
+
+        const background = getComputedStyle(sections).backgroundColor.match(/\d+(?:\.\d+)?/g);
+        const luminance = background
+          ? (0.2126 * Number(background[0]) + 0.7152 * Number(background[1]) + 0.0722 * Number(background[2])) / 255
+          : 0;
+
+        navWrapper.classList.toggle('is-light-surface', luminance > 0.58);
+      }
+
+      function updateActiveLinkOnScroll() {
+        const scrollAnchor = window.scrollY + window.innerHeight * 0.35;
+        let visibleLink = navLinks[0];
+
+        navLinks.forEach((link) => {
+          const targetId = link.getAttribute('href');
+          if (!targetId || !targetId.startsWith('#')) return;
+
+          const section = document.querySelector(targetId);
+          if (section && section.offsetTop <= scrollAnchor) {
+            visibleLink = link;
+          }
+        });
+
+        if (visibleLink === currentActiveLink) return;
+
+        navLinks.forEach((item) => item.classList.remove('active'));
+        visibleLink.classList.add('active');
+        currentActiveLink = visibleLink;
+        updateIndicatorPosition(visibleLink);
+      }
+
+      // Initial alignment on page load
+      if (currentActiveLink) {
+        requestAnimationFrame(() => {
+          updateIndicatorPosition(currentActiveLink);
+        });
+      }
+
+      // Handle click on nav link: moves the hover/capsule indicator to clicked item
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          navLinks.forEach(item => item.classList.remove('active'));
+          link.classList.add('active');
+          currentActiveLink = link;
+          updateIndicatorPosition(link);
+        });
+
+        // Interactive hover preview gliding
+        link.addEventListener('mouseenter', () => {
+          updateIndicatorPosition(link);
+        });
+      });
+
+      // Smoothly return indicator to clicked active item when mouse leaves the navbar
+      if (navWrapper) {
+        navWrapper.addEventListener('mouseleave', () => {
+          if (currentActiveLink) {
+            updateIndicatorPosition(currentActiveLink);
+          }
+        });
+      }
+
+      // Re-calculate on window resize
+      window.addEventListener('resize', () => {
+        if (currentActiveLink) {
+          updateIndicatorPosition(currentActiveLink);
+        }
+        updateNavSurface();
+      });
+
+      window.addEventListener('scroll', () => {
+        updateActiveLinkOnScroll();
+        updateNavSurface();
+      }, { passive: true });
+      updateActiveLinkOnScroll();
+      updateNavSurface();
+
+      // 2. Subtle Cinematic Mouse Parallax
+      const heroContainer = document.getElementById('heroContainer');
+      const athleteImg = document.getElementById('heroAthleteImg');
+      const headline = document.getElementById('heroHeadline');
+
+      let mouseX = 0, mouseY = 0, targetX = 0, targetY = 0;
+      const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+      if (!isReducedMotion && !isTouch && heroContainer && athleteImg) {
+        heroContainer.addEventListener('mousemove', (e) => {
+          const rect = heroContainer.getBoundingClientRect();
+          targetX = (e.clientX - rect.left) / rect.width - 0.5;
+          targetY = (e.clientY - rect.top) / rect.height - 0.5;
+        });
+
+        heroContainer.addEventListener('mouseleave', () => {
+          targetX = 0;
+          targetY = 0;
+        });
+
+        function renderParallax() {
+          mouseX += (targetX - mouseX) * 0.06;
+          mouseY += (targetY - mouseY) * 0.06;
+
+          athleteImg.style.transform = `scale(1.03) translate(${mouseX * 14}px, ${mouseY * 10}px)`;
+          if (headline) {
+            headline.style.transform = `translate(${-mouseX * 5}px, ${-mouseY * 3}px)`;
+          }
+
+          requestAnimationFrame(renderParallax);
+        }
+        requestAnimationFrame(renderParallax);
+      }
+
+      // 3. Action Buttons
+      const liveResultsBtn = document.getElementById('liveResultsBtn');
+      const arrowActionBtn = document.getElementById('arrowActionBtn');
+
+      function openLiveResults() {
+        if (festivalConfig.resultsUrl && festivalConfig.resultsUrl.startsWith('http')) {
+          window.open(festivalConfig.resultsUrl, '_blank', 'noopener,noreferrer');
+        } else {
+          const textSpan = liveResultsBtn.querySelector('span:last-child');
+          const original = textSpan.textContent;
+          textSpan.textContent = 'Connecting...';
+          setTimeout(() => { textSpan.textContent = original; }, 1200);
+        }
+      }
+
+      if (liveResultsBtn) liveResultsBtn.addEventListener('click', openLiveResults);
+      if (arrowActionBtn) arrowActionBtn.addEventListener('click', openLiveResults);
+
+      // 4. Mobile Drawer Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileClose = document.getElementById('mobileDrawerClose');
+      const drawerLinks = document.querySelectorAll('.mobile-drawer-link');
+
+      function toggleMobileDrawer(open) {
+        if (!mobileDrawer) return;
+        mobileBtn?.classList.toggle('is-open', open);
+        mobileBtn?.setAttribute('aria-expanded', String(open));
+        mobileBtn?.setAttribute('aria-label', open ? 'Close mobile navigation menu' : 'Open mobile navigation menu');
+        if (open) {
+          mobileDrawer.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        } else {
+          mobileDrawer.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+      }
+
+      if (mobileBtn) mobileBtn.addEventListener('click', () => toggleMobileDrawer(!mobileDrawer.classList.contains('is-open')));
+      if (mobileClose) mobileClose.addEventListener('click', () => toggleMobileDrawer(false));
+      drawerLinks.forEach(link => link.addEventListener('click', () => toggleMobileDrawer(false)));
+
+      // 5. Smooth Scroll for anchors
+      let scrollAnimationFrame;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function slowlyScrollTo(targetTop, duration = 1400) {
+        if (prefersReducedMotion) {
+          window.scrollTo(0, targetTop);
+          return;
+        }
+
+        cancelAnimationFrame(scrollAnimationFrame);
+        const startTop = window.scrollY;
+        const distance = targetTop - startTop;
+        const startTime = performance.now();
+
+        function animateScroll(currentTime) {
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+          const easedProgress = progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+          window.scrollTo(0, startTop + distance * easedProgress);
+          if (progress < 1) {
+            scrollAnimationFrame = requestAnimationFrame(animateScroll);
+          } else {
+            scrollAnimationFrame = null;
+          }
+        }
+
+        scrollAnimationFrame = requestAnimationFrame(animateScroll);
+      }
+
+      class PremiumSmoothScroll {
+        constructor() {
+          this.current = window.scrollY;
+          this.target = window.scrollY;
+          this.ease = 0.075;
+          this.wheelMultiplier = 0.8;
+          this.lastFramePosition = window.scrollY;
+
+          if (!prefersReducedMotion) {
+            window.addEventListener('wheel', (event) => {
+              if (event.ctrlKey) return;
+
+              event.preventDefault();
+              const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+              this.target += event.deltaY * this.wheelMultiplier;
+              this.target = Math.max(0, Math.min(this.target, maxScroll));
+            }, { passive: false });
+
+            this.animate();
+          }
+        }
+
+        animate() {
+          const actualPosition = window.scrollY;
+          if (Math.abs(actualPosition - this.lastFramePosition) > 1) {
+            this.current = actualPosition;
+            this.target = actualPosition;
+          }
+
+          this.current += (this.target - this.current) * this.ease;
+          if (Math.abs(this.target - this.current) < 0.1) {
+            this.current = this.target;
+          }
+
+          window.scrollTo(0, this.current);
+          this.lastFramePosition = this.current;
+          requestAnimationFrame(() => this.animate());
+        }
+      }
+
+      new PremiumSmoothScroll();
+
+      const revealSections = document.querySelectorAll('.site-content > section, .site-footer');
+      const revealImmediately = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      revealSections.forEach((section) => {
+        section.classList.add('scroll-reveal');
+        [...section.children].forEach((child, index) => {
+          child.style.setProperty('--reveal-delay', `${index * 90}ms`);
+        });
+      });
+
+      if (revealImmediately || !('IntersectionObserver' in window)) {
+        revealSections.forEach((section) => section.classList.add('is-visible'));
+      } else {
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+        revealSections.forEach((section) => sectionObserver.observe(section));
+      }
+
+      const fullGalleryLink = document.querySelector('.gallery-section .text-link');
+      if (fullGalleryLink) fullGalleryLink.href = 'gallery.html';
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (!targetId || targetId === '#') return;
+
+          if (targetId === '#home') {
+            e.preventDefault();
+            cancelAnimationFrame(scrollAnimationFrame);
+            scrollAnimationFrame = null;
+            slowlyScrollTo(0);
+            return;
+          }
+
+          const target = document.querySelector(targetId);
+          if (!target) return;
+
+          e.preventDefault();
+          const targetTop = target.getBoundingClientRect().top + window.scrollY - 104;
+          slowlyScrollTo(targetTop);
+        });
+      });
+
+      const indexMediaModal = document.getElementById('indexMediaModal');
+      const indexMediaModalImage = document.getElementById('indexMediaModalImage');
+      const indexMediaModalVideo = document.getElementById('indexMediaModalVideo');
+      const indexMediaModalClose = document.getElementById('indexMediaModalClose');
+
+      function closeIndexMediaModal() {
+        indexMediaModal.classList.remove('is-open');
+        indexMediaModal.setAttribute('aria-hidden', 'true');
+        indexMediaModalImage.removeAttribute('src');
+        indexMediaModalImage.hidden = false;
+        indexMediaModalVideo.pause();
+        indexMediaModalVideo.removeAttribute('src');
+        indexMediaModalVideo.removeAttribute('poster');
+        indexMediaModalVideo.load();
+        indexMediaModalVideo.hidden = true;
+        document.body.style.overflow = '';
+      }
+
+      function openIndexMediaModal() {
+        indexMediaModal.classList.add('is-open');
+        indexMediaModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      document.querySelectorAll('.gallery-section .gallery-item').forEach((item) => {
+        item.addEventListener('click', () => {
+          const image = item.querySelector('img');
+          if (!image) return;
+
+          indexMediaModalVideo.hidden = true;
+          indexMediaModalImage.hidden = false;
+          indexMediaModalImage.src = image.currentSrc || image.src;
+          indexMediaModalImage.alt = image.alt;
+          openIndexMediaModal();
+        });
+      });
+
+      document.querySelectorAll('.highlight-card').forEach((card) => {
+        card.addEventListener('click', (event) => {
+          if (event.target.closest('video')) return;
+          const video = card.querySelector('video');
+          const source = video?.querySelector('source');
+          if (!video || !source) return;
+
+          indexMediaModalImage.hidden = true;
+          indexMediaModalImage.removeAttribute('src');
+          indexMediaModalVideo.hidden = false;
+          indexMediaModalVideo.src = source.src;
+          indexMediaModalVideo.poster = video.poster;
+          openIndexMediaModal();
+          indexMediaModalVideo.play().catch(() => {});
+        });
+      });
+
+      indexMediaModalClose.addEventListener('click', closeIndexMediaModal);
+      indexMediaModal.addEventListener('click', (event) => {
+        if (event.target === indexMediaModal) closeIndexMediaModal();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && indexMediaModal.classList.contains('is-open')) {
+          closeIndexMediaModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
