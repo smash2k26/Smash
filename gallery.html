@@ -64,6 +64,9 @@
   </style>
 </head>
 <body class="gallery-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <video src="./loading%20.mp4" autoplay muted playsinline preload="auto"></video>
+  </div>
   <main class="gallery-shell">
     <section class="gallery-main" aria-label="Festival photo gallery">
       <a class="gallery-home" href="index.html#home"><span aria-hidden="true">←</span> Home</a>
@@ -95,6 +98,13 @@
   </div>
 
   <script>
+    document.querySelector('#siteLoader video')?.addEventListener('ended', () => {
+      const siteLoader = document.getElementById('siteLoader');
+      if (!siteLoader) return;
+      siteLoader.classList.add('is-hidden');
+      window.setTimeout(() => siteLoader.remove(), 850);
+    }, { once: true });
+
     const mediaModal = document.getElementById('mediaModal');
     const mediaModalContent = document.getElementById('mediaModalContent');
     const closeMediaModal = () => {

@@ -26,6 +26,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
 </head>
 <body>
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <video src="./loading%20.mp4" autoplay muted playsinline preload="auto"></video>
+  </div>
    <main class="hero-container" id="heroContainer" role="region" aria-label="College Sports Festival Hero">
     
     <!-- Cinematic Full-bleed Athlete Background Layer -->
@@ -148,7 +151,7 @@ arrow_forward</a></section>
 
     <section class="highlights-section content-section" id="highlights"><div class="section-heading"><span class="section-kicker">The moments that last</span><h2>Watch the<br><em>highlights.</em></h2></div><div class="highlight-grid"><article class="highlight-card"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=900&auto=format&fit=crop" aria-label="Opening ceremony highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play opening ceremony highlight">▶</button><strong>Opening ceremony</strong><small>Watch the energy rise</small></article><article class="highlight-card highlight-card-tall"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=900&auto=format&fit=crop" aria-label="Best moments highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Footboys.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play best moments highlight">▶</button><strong>Best moments</strong><small>The festival in motion</small></article><article class="highlight-card"><video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=900&auto=format&fit=crop" aria-label="Athlete moments highlight video"><source src="https://storage.googleapis.com/coverr-main/mp4/Footage-of-a-sportsman-running-on-a-treadmill.mp4" type="video/mp4"></video><button class="highlight-play" type="button" aria-label="Play athlete moments highlight">▶</button><strong>Athlete moments</strong><small>Made for this</small></article></div></section>
 
-    <section class="info-section content-section" id="announcements"><div class="info-column"><span class="section-kicker">Stay in the loop</span><h2>Festival<br><em>announcements.</em></h2><div class="announcement"><time>08 SEP 2026</time><strong>Football fixtures are now live</strong><p>Check your team's reporting time and group-stage venue before match day.</p></div><div class="announcement"><time>04 SEP 2026</time><strong>Volunteer briefing moved to 18 Sep</strong><p>All student coordinators should report to the Indoor Stadium at 4:00 PM.</p></div></div><div class="info-column venue-column" id="venues"><span class="section-kicker">Know your arenas</span><h2>Five venues.<br><em>One campus.</em></h2><div class="venue-list"><div><strong>Main Ground</strong><span>Football · Opening Ceremony</span></div><div><strong>Indoor Stadium</strong><span>Basketball · Badminton · Table Tennis</span></div><div><strong>Athletics Track</strong><span>Track & Field Finals</span></div><div><strong>North Court</strong><span>Volleyball · Outdoor training</span></div></div></div></section>
+    <section class="info-section content-section" id="announcements"><div class="info-column"><span class="section-kicker">Stay in the loop</span><h2>Festival<br><em>announcements.</em></h2><div class="announcement"><time>14 SEP 2026</time><strong>Opening ceremony on the way</strong><p>Lightening the sparks of dedication and hardwork</p></div><div class="announcement"><time>18 SEP 2026</time><strong>Ego Clash (Tug & War)</strong><p>Clash for a banana cluster</p></div></div><div class="info-column venue-column" id="venues"><span class="section-kicker">Know your arenas</span><h2>Three Arena.<br><em>One campus.</em></h2><div class="venue-list"><div><strong>NPS Ground</strong><span>Football · Cricket · Futsal</span></div><div><strong>Indoor Yard</strong><span>Pushup · Badminton · Plank</span></div><div><strong>Athletics Track</strong><span>NPS football Ground</span></div><div><strong>Basket Ball Court</strong><span>Volleyball · Basket The Ball</span></div></div></div></section>
 
     <section class="community-section content-section" id="committee"><div class="section-heading section-heading-row"><div><span class="section-kicker">The people behind the play</span><h2>Built by the<br><em>whole community.</em></h2></div><p>Faculty, students, volunteers, and partners make every fixture possible.</p></div><div class="people-grid"><div><b>01</b><strong>Faculty coordinators</strong><span>Guidance that keeps the festival moving.</span></div><div><b>02</b><strong>Sports committee</strong><span>Fair play, smooth fixtures, big ambition.</span></div><div><b>03</b><strong>Student coordinators</strong><span>The energy and logistics behind every day.</span></div><div><b>04</b><strong>Volunteers</strong><span>Welcoming every athlete to the arena.</span></div></div></section>
 
@@ -174,6 +177,13 @@ arrow_forward</a></section>
   </div>
 
   <script>
+
+    document.querySelector('#siteLoader video')?.addEventListener('ended', () => {
+      const siteLoader = document.getElementById('siteLoader');
+      if (!siteLoader) return;
+      siteLoader.classList.add('is-hidden');
+      window.setTimeout(() => siteLoader.remove(), 850);
+    }, { once: true });
 
 
     document.addEventListener('DOMContentLoaded', () => {

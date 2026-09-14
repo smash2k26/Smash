@@ -59,6 +59,9 @@
   </style>
 </head>
 <body class="schedule-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <video src="./loading%20.mp4" autoplay muted playsinline preload="auto"></video>
+  </div>
   <main class="schedule-shell">
     <section class="schedule-main" aria-label="SMASH 2K26 event schedule">
       <a class="schedule-home" href="index.html#home"><span aria-hidden="true">←</span> Home</a>
@@ -106,6 +109,13 @@
     </section>
   </main>
   <script>
+    document.querySelector('#siteLoader video')?.addEventListener('ended', () => {
+      const siteLoader = document.getElementById('siteLoader');
+      if (!siteLoader) return;
+      siteLoader.classList.add('is-hidden');
+      window.setTimeout(() => siteLoader.remove(), 850);
+    }, { once: true });
+
     const scheduleTabs = document.querySelectorAll('.schedule-tab');
     const schedulePanels = document.querySelectorAll('.schedule-day');
 
